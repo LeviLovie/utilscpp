@@ -1,4 +1,5 @@
-#pragma once
+#ifndef LOGGER_HPP
+#define LOGGER_HPP
 #include <iostream>
 
 namespace logger {
@@ -27,3 +28,5 @@ namespace logger {
         std::cout << "\x1b[1m" << align_right(LEVELS[level_index], 21) << "\x1b[0m" << " " << message << std::endl;
     }
 }
+
+#endif
